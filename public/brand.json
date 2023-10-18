@@ -1,0 +1,65 @@
+{
+    "brands": [
+      {
+        "id": 1,
+        "name": "Coca-cola",
+        "brandimg": "https://i.ibb.co/h9sdsx0/cocacola-logo.png",
+        "sliderimages": [
+          "https://i.ibb.co/bsH499t/1-2.jpg",
+          "https://i.ibb.co/k9TfPbv/1-1.jpg",
+          "https://i.ibb.co/FsspmDH/1-3.png"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "McDonald's",
+        "brandimg": "https://i.ibb.co/k8rxdtw/Mc.jpg",
+        "sliderimages": [
+          "https://i.ibb.co/2sYcGTy/2-1.jpg",
+          "https://i.ibb.co/Zfp6qFr/2-3.jpg",
+          "https://i.ibb.co/Gk15jBW/2-2.png"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Starbucks",
+        "brandimg": "https://i.ibb.co/PCnsM4B/Star.jpg",
+        "sliderimages": [
+          "https://i.ibb.co/KbFM0Hn/3-3.jpg",
+          "https://i.ibb.co/2k8ZS15/3-2.jpg",
+          "https://i.ibb.co/nQwM6qX/3-1.jpg"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Nestle",
+        "brandimg": "https://i.ibb.co/yQ31dqX/chok.jpg",
+        "sliderimages": [
+          "https://i.ibb.co/nwjjsCZ/4-1.jpg",
+          "https://i.ibb.co/Hx64SZY/4-2.jpg",
+          "https://i.ibb.co/M6gkWP8/4-3.jpg"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Pizza Hut",
+        "brandimg": "https://i.ibb.co/wQxFvgv/pizza.png",
+        "sliderimages": [
+          "https://i.ibb.co/H72WzKh/5-3.jpg",
+          "https://i.ibb.co/5vZW9V8/5-1.jpg",
+          "https://i.ibb.co/fQdsKBc/5-2.jpg"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Soup Soup",
+        "brandimg": "https://i.ibb.co/pQjWw0C/soup.jpg",
+        "sliderimages": [
+          "https://i.ibb.co/N2QgVMy/6-2.jpg",
+          "https://i.ibb.co/7YFfQsN/6-3.jpg",
+          "https://i.ibb.co/jVsrnGB/6-1.jpg"
+        ]
+      }
+    ]
+  }
+  
