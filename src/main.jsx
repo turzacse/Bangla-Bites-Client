@@ -16,6 +16,7 @@ import Update from './Product/Update.jsx';
 import Login from './Pages/Login/Login.jsx';
 import Register from './Pages/Register/Register.jsx';
 import AuthProvider from './Provider/AuthProvider.jsx';
+import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
 
 
 
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/addproduct',
-        element: <AddProduct></AddProduct>
+        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
       },
       {
         path: '/mycart',
