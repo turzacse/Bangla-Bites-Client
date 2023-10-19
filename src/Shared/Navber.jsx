@@ -31,7 +31,7 @@ const Navber = () => {
                     </div>
                     <Link>
                       <img className="h-[80px]" src='https://i.ibb.co/Krmz5xN/Bangla-Bites.jpg' alt="" />
-                      <h2 className="text-xl font-semibold text-orange-500">Bangla Bites</h2>
+                      <h2 className="text-xl font-semibold text-orange-500 hidden md:block">Bangla Bites</h2>
                     </Link>
                     {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
                 </div>

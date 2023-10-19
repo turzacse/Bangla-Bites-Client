@@ -62,22 +62,22 @@ const Product = () => {
             {/* slider  */}
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src={img[0]} className="w-full h-[350px] rounded-3xl" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <img src={img[0]} className="w-full lg:h-[350px] h-[170px] rounded-3xl" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 lg:left-5 left-2 lg:right-5 right-2 lg:top-1/2 top-1/2">
                         <a href="#slide3" className="btn btn-circle">❮</a>
                         <a href="#slide2" className="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
-                    <img src={img[1]} className="w-full h-[350px] rounded-3xl" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <img src={img[1]} className="w-full lg:h-[350px] h-[170px] rounded-3xl" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 lg:left-5 left-2 lg:right-5 right-2 lg:top-1/2 top-1/2">
                         <a href="#slide1" className="btn btn-circle">❮</a>
                         <a href="#slide3" className="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
-                    <img src={img[2]} className="w-full h-[350px] rounded-3xl" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <img src={img[2]} className="w-full lg:h-[350px] h-[170px] rounded-3xl" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 lg:left-5 left-2 lg:right-5 right-2 lg:top-1/2 top-1/2">
                         <a href="#slide2" className="btn btn-circle">❮</a>
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
@@ -85,11 +85,11 @@ const Product = () => {
             </div>
             {/* finished Slider  */}
             <div>
-                <h2 className="mt-10 text-3xl font-semibold text-violet-600 shadow-2xl">Our Food item</h2>
+                <h2 className="mt-10 lg:text-3xl text-2xl font-bold text-orange-500 shadow-2xl">Our Food item</h2>
                 {isLoading ? (
                     <p>Loading...</p>
                 ) : (
-                    <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
+                    <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-5 gap-2">
                         {
                             filterProduct.map(p => <ProductCard key={p._id} p={p}></ProductCard>)
                         }

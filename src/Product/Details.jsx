@@ -63,15 +63,15 @@ const Details = () => {
         <div className="mx-20">
             Details Route
             <div className="card bg-base-100 shadow-xl">
-                <figure><img className="rounded-xl h-[400px] w-[600px]" src={photo} alt="Shoes" /></figure>
+                <figure><img className="rounded-xl md:h-[400px] md:w-[600px]" src={photo} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
-                    <div className="flex justify-between">
-                    <h3>Brand: {brand}</h3> <h3 className="btn bg-success">{price}TK</h3>
+                    <div className="md:flex justify-between">
+                    <h3><span className="font-semibold">Brand:</span> {brand}</h3> <h3 className="btn bg-success">{price}TK</h3>
                     </div>
-                    <p>{description}</p>
+                    <p className="text-gray-400">{description}</p>
                     <div className="card-actions justify-end">
-                        <button onClick={handleAdd} className="btn btn-warning">Add to Cart</button>
+                        <button onClick={handleAdd} className="btn btn-warning text-white hover:bg-red-400">Add to Cart</button>
                     </div>
                 </div>
             </div>
