@@ -2,8 +2,12 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { FcGoogle } from 'react-icons/fc';
 import { Link } from 'react-router-dom';
 import auth from '../../Firebase/firebase.config';
+import { useContext } from 'react';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const Login = () => {
+
+    const {signIn} = useContext(AuthContext);
     const handleLogin = e =>{
         e.preventDefault();
         const email = e.target.email.value;
@@ -11,7 +15,7 @@ const Login = () => {
         console.log(email, password);
 
         // user create 
-        createUserWithEmailAndPassword(auth, email, password)
+        signIn(email, password)
         .then(result => {
             console.log(result.user);
         })
