@@ -56,12 +56,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/details/:id',
-        element: <Details></Details>,
+        element: <PrivateRoute><Details></Details></PrivateRoute>,
         loader: async({params})=> await fetch(`https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product/${params.id}`),
       },
       {
         path: '/update/:id',
-        element: <Update></Update>,
+        element: <PrivateRoute><Update></Update></PrivateRoute>,
         loader: async({params}) => await fetch(`https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product/${params.id}`)
       },
       

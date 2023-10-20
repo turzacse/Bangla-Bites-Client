@@ -1,10 +1,11 @@
 import { AiOutlineDelete } from 'react-icons/ai';
 import Swal from 'sweetalert2';
 
-const CartProduct = ({product}) => {
-    console.log(product);
-    const {_id, name, brand, price, photo} = product;
+const CartProduct = ({product, carts, setCarts}) => {
+    //console.log(product);
+    const {_id, name, brand, price, photo} = product || {};
 
+    console.log(carts);
     const handleDelete = _id => {
         console.log(_id);
         Swal.fire({
@@ -23,12 +24,15 @@ const CartProduct = ({product}) => {
              })
              .then(res => res.json())
              .then(data => {
-                if(data.deleteCount > 0) {
+                if(data.deletedCount > 0) {
                     Swal.fire(
                         'Deleted!',
-                        'Your file has been deleted.',
+                        'Your item has been deleted.',
                         'success'
                       )
+                      const remain = carts.filter(cart => cart._id !== _id);
+                      console.log(remain);
+                      setCarts(remain);
                 }
              })
             }

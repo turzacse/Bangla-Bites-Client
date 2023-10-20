@@ -58,7 +58,7 @@ const Login = () => {
             })
     }
     return (
-        <div className="w-1/3 mx-auto bg-base-400 shadow-2xl p-10">
+        <div className="md:w-1/3 mx-auto bg-base-400 shadow-2xl p-10">
             <form onSubmit={handleLogin}>
                 <input type="email" name="email" placeholder="Your Email" className="input input-bordered w-full" required />
                 <input type="password" name="password" placeholder="Password" className="input input-bordered w-full my-4" required />
