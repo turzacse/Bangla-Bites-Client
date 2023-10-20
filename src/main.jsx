@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product'),
+        loader: () => fetch('https://server-side-sepia-eight.vercel.app/product'),
       },
       {
         path: '/addproduct',
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
       {
         path: '/mycart',
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader: ()=> fetch('https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/cart')
+        loader: ()=> fetch('https://server-side-sepia-eight.vercel.app/cart')
       },
       {
         path: '/product/:name',
@@ -57,12 +57,12 @@ const router = createBrowserRouter([
       {
         path: '/details/:id',
         element: <PrivateRoute><Details></Details></PrivateRoute>,
-        loader: async({params})=> await fetch(`https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product/${params.id}`),
+        loader: async({params})=> await fetch(`https://server-side-sepia-eight.vercel.app/product/${params.id}`),
       },
       {
         path: '/update/:id',
         element: <PrivateRoute><Update></Update></PrivateRoute>,
-        loader: async({params}) => await fetch(`https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product/${params.id}`)
+        loader: async({params}) => await fetch(`https://server-side-sepia-eight.vercel.app/product/${params.id}`)
       },
       
     ]

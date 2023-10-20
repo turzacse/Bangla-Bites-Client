@@ -15,7 +15,7 @@ const Product = () => {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch('https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product')
+        fetch('https://server-side-sepia-eight.vercel.app/product')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);

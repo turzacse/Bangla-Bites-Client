@@ -11,7 +11,7 @@ const Update = () => {
     const [isloading, setIsLoading] = useState(true);
 
     useEffect(()=> {
-        fetch('https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product')
+        fetch('https://server-side-sepia-eight.vercel.app/product')
         .then(res => res.json())
         .then(data => {
             setProduct(data);
@@ -46,7 +46,7 @@ const Update = () => {
 
         console.log(product);
 
-        fetch(`https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product/${_id}`,{
+        fetch(`https://server-side-sepia-eight.vercel.app/product/${_id}`,{
             method: 'PUT',
             headers: {
                 'content-type':'application/json'

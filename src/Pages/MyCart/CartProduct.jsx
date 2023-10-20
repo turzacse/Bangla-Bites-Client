@@ -19,7 +19,7 @@ const CartProduct = ({product, carts, setCarts}) => {
           }).then((result) => {
             if (result.isConfirmed) {
               
-             fetch(`https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/cart/${_id}`,{
+             fetch(`https://server-side-sepia-eight.vercel.app/cart/${_id}`,{
                 method: 'DELETE'
              })
              .then(res => res.json())
