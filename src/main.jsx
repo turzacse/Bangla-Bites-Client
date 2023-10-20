@@ -17,6 +17,7 @@ import Login from './Pages/Login/Login.jsx';
 import Register from './Pages/Register/Register.jsx';
 import AuthProvider from './Provider/AuthProvider.jsx';
 import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
+import Error from './Pages/Error/Error.jsx';
 
 
 
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
       
     ]
   },
+  {
+    path: '*',
+    element: <Error></Error>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

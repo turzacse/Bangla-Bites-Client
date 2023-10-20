@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Brands from "./Brands";
 import Footer from "../../Shared/Footer";
 import Extra1 from "./Extra1";
+import Extra2 from "./Extra2";
 
 const Home = () => {
 
@@ -27,6 +28,7 @@ const Home = () => {
                     }
                 </div>
             </div>
+            <Extra2></Extra2>
             <Footer></Footer>
         </div>
     );
