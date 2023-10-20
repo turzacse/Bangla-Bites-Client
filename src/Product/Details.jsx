@@ -10,7 +10,7 @@ const Details = () => {
     const [isloading, setIsLoading] = useState(true);
 
     useEffect(()=> {
-        fetch('http://localhost:5001/product')
+        fetch('https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product')
         .then(res => res.json())
         .then(data => {
             setProduct(data);
@@ -38,7 +38,7 @@ const Details = () => {
         e.preventDefault();
        const cart = {photo,name,brand, type, price, ratting, description};
 
-       fetch('http://localhost:5001/cart',{
+       fetch('https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/cart',{
             method: 'POST',
             headers: {
                 'content-type':'application/json'

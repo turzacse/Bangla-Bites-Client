@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5001/product'),
+        loader: () => fetch('https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product'),
       },
       {
         path: '/addproduct',
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
       {
         path: '/mycart',
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader: ()=> fetch('http://localhost:5001/cart')
+        loader: ()=> fetch('https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/cart')
       },
       {
         path: '/product/:name',
@@ -57,12 +57,12 @@ const router = createBrowserRouter([
       {
         path: '/details/:id',
         element: <Details></Details>,
-        loader: async({params})=> await fetch(`http://localhost:5001/product/${params.id}`),
+        loader: async({params})=> await fetch(`https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product/${params.id}`),
       },
       {
         path: '/update/:id',
         element: <Update></Update>,
-        loader: async({params}) => await fetch(`http://localhost:5001/product/${params.id}`)
+        loader: async({params}) => await fetch(`https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product/${params.id}`)
       },
       
     ]

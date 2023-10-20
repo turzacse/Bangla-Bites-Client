@@ -18,7 +18,7 @@ const AddProduct = () => {
 
         console.log(product);
         //send data 
-        fetch('http://localhost:5001/product',{
+        fetch('https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/product',{
             method: 'POST',
             headers: {
                 'content-type':'application/json'

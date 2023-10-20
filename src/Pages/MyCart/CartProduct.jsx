@@ -18,7 +18,7 @@ const CartProduct = ({product}) => {
           }).then((result) => {
             if (result.isConfirmed) {
               
-             fetch(`http://localhost:5001/cart/${_id}`,{
+             fetch(`https://bangla-bites-server-side-7pnd8ccw7-turzas-projects.vercel.app/cart/${_id}`,{
                 method: 'DELETE'
              })
              .then(res => res.json())
