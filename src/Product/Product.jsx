@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ProductCard from "../Pages/Home/ProductCard";
+import Footer from "../Shared/Footer";
 
 const Product = () => {
     const { name } = useParams();
@@ -58,7 +59,8 @@ const Product = () => {
 
 
     return (
-        <div className="mx-10">
+        <div>
+            <div className="mx-10 mb-10">
             {/* slider  */}
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
@@ -96,6 +98,9 @@ const Product = () => {
                     </div>
                 )}
             </div>
+            
+        </div>
+        <Footer></Footer>
         </div>
     );
 };

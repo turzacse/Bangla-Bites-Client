@@ -12,7 +12,7 @@ const Brands = ({brand}) => {
                 <div className="card-body">
                     <h2 className="lg:text-2xl text-lg font-semibold">{name}</h2>
                     <Link to={`/product/${name}`} 
-                    className="btn btn-success bg-orange-500 text-white border-none">Buy</Link>
+                    className="btn btn-success bg-orange-500 text-white border-none capitalize">Show items</Link>
                     </div>
                 </div>
             </div>

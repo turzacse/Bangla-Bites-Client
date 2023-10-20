@@ -5,7 +5,7 @@ const Extra2 = () => {
         <div className="my-10">
             <div className="hero  bg-base-200">
                 <div className="hero-content flex-col lg:flex-row">
-                    <img src={'https://i.ibb.co/yffmSyD/coffee1.jpg'} className=" flex-1 md:w-1/2 lg:w-full rounded-lg shadow-2xl" />
+                    <img src={'https://i.ibb.co/yffmSyD/coffee1.jpg'} className=" flex-1 md:w-1/2 lw-full rounded-lg shadow-2xl" />
                     <div>
                         <h1 className="md:text-5xl text-3xl font-bold mb-10">Why Choose  <span className="text-orange-500">Bangla Bites !!</span></h1>
                         

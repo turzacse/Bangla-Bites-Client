@@ -62,7 +62,7 @@ const Register = () => {
     }
     return (
         <div>
-            <div className="w-1/3 mx-auto bg-base-400 shadow-2xl p-10">
+            <div className="md:w-1/3 w-full mx-auto bg-base-400 shadow-2xl p-10">
                 <form onSubmit={handleRegister}>
                     <input type="text" name="photo" placeholder="Photo URL" className="input input-bordered w-full" required />
                     <input type="text" name="name" placeholder="Your Name" className="input input-bordered w-full my-4" required />
@@ -83,8 +83,6 @@ const Register = () => {
                             className='text-blue-400 ml-2'
                             to='/login'
                         >Please Login</Link> </p>
-
-
                 </form>
             </div>
         </div>
