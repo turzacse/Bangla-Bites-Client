@@ -36,12 +36,21 @@ const AuthProvider = ({children}) => {
         }
     },[])
 
+
+    const [dark, setDark] =useState(false);
+
+    const toggleTheme = () =>{
+        setDark((prevDark) => !prevDark);
+    }
+
     const authInfo ={
         user,
         createUser,
         signIn,
         logOut,
         reload,
+        dark,
+        toggleTheme,
     }
     return (
         <AuthContext.Provider value={authInfo}>

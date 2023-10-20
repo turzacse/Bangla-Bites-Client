@@ -40,7 +40,7 @@ const AddProduct = () => {
         e.target.reset();
     }
     return (
-    <div className="bg-base-200 p-10 w-1/2 mx-auto shadow-xl">
+    <div className="bg-base-200 p-10 md:w-1/2 w-full mx-auto shadow-xl">
         <h3 className="text-2xl font-semibold text-center mb-10">Add the Food Item</h3>
         <form onSubmit={handleAddProduct}>
             <input type="text" name="photo" placeholder="Photo URL" className="input input-bordered w-full" required />

@@ -36,14 +36,14 @@ const CartProduct = ({product}) => {
     }
     return (
         <div>
-            <div className="w-1/2 mx-auto flex p-5 gap-10 shadow-2xl mb-10">
+            <div className="md:w-1/2 w-full mx-auto flex p-5 gap-10 shadow-2xl mb-10">
                 <div>
-                    <img className="h-[200px] w-[300px] rounded-xl" src={photo} alt="" />
+                    <img className="md:h-[200px] h-[150px] md:w-[300px] w-[200px] rounded-xl" src={photo} alt="" />
                 </div>
                 <div>
                     <h2>{name}</h2>
-                    <h3>{brand}</h3>
-                    <h4>{price} TK</h4>
+                    <h3><span className='font-bold'>Brand:</span>{brand}</h3>
+                    <h4><span className='font-bold'>Price:</span> {price} TK</h4>
                     <div className='text-2xl mt-20 flex justify-center items-center gap-10'>
                         <button 
                         onClick={() => handleDelete(_id)}

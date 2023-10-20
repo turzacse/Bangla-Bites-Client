@@ -61,7 +61,6 @@ const Details = () => {
 
     return (
         <div className="mx-20">
-            Details Route
             <div className="card bg-base-100 shadow-xl">
                 <figure><img className="rounded-xl md:h-[400px] md:w-[600px]" src={photo} alt="Shoes" /></figure>
                 <div className="card-body">

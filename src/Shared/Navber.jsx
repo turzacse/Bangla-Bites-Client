@@ -1,16 +1,22 @@
 import { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 
 
 const Navber = () => {
+    const navigate = useNavigate();
 
-    const { user, logOut } = useContext(AuthContext);
+    const { user, logOut, dark, toggleTheme } = useContext(AuthContext);
 
-    const handlelogout = () =>{
+    console.log(user);
+
+    const defualt = "https://i.ibb.co/9rczVxc/user.png";
+    const handlelogout = () => {
         logOut()
-        .then()
-        .catch()
+            .then(res => {
+                navigate('/');
+            })
+            .catch()
     }
     const links = [
         <li><NavLink to='/'>Home</NavLink></li>,
@@ -30,8 +36,8 @@ const Navber = () => {
                         </ul>
                     </div>
                     <Link>
-                      <img className="h-[80px]" src='https://i.ibb.co/Krmz5xN/Bangla-Bites.jpg' alt="" />
-                      <h2 className="text-xl font-semibold text-orange-500 hidden md:block">Bangla Bites</h2>
+                        <img className="h-[80px]" src='https://i.ibb.co/Krmz5xN/Bangla-Bites.jpg' alt="" />
+                        <h2 className="text-xl font-semibold text-orange-500 hidden md:block">Bangla Bites</h2>
                     </Link>
                     {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
                 </div>
@@ -41,13 +47,28 @@ const Navber = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    {
-                        user ? 
-                        <button onClick={handlelogout} className="btn">Log out</button>
-                        :
-                        <NavLink to='/login'>Login</NavLink>
-                    }
-                    
+                    {/* <button onClick={toggleTheme}>
+                        {dark ? "Light Mode" : "Dark Mode"}
+                    </button> */}
+                    {user ? (
+                        <>
+
+                            <div className="lg:flex-col flex gap-2 justify-center">
+                                <div className="w-10 rounded-full">
+                                    <img className="rounded-full flex justify-center items-center mx-auto lg:ml-5" src={user.photoURL || defualt} alt="user profile" />
+                                </div>
+                                <h2>{user.displayName}</h2>
+                            </div>
+                            
+                            <button className="" onClick={handlelogout}>Sign Out</button>
+
+                        </>
+                    ) : (
+                        <NavLink className="btn btn-ghost capitalize" to="/login">
+                            Login
+                        </NavLink>
+                    )}
+
                 </div>
             </div>
         </div>

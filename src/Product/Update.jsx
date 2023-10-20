@@ -67,18 +67,18 @@ const Update = () => {
         })
     }
     return (
-        <div className="bg-base-200 p-10 w-1/2 mx-auto shadow-xl">
+        <div className="bg-base-200 p-10 md:w-1/2 w-full mx-auto shadow-xl">
             <h3 className="text-2xl font-semibold text-center mb-10">Update the Food Item</h3>
             <form onSubmit={handleUpdate}>
             <input type="text" name="photo" placeholder="Photo URL" className="input input-bordered w-full" defaultValue={photo} required />
             <input type="text" name="name" placeholder="Product Name" className="input input-bordered w-full my-4" defaultValue={name} required/>
 
-            <div className="flex gap-4 mb-4">
-                <input type="text" name="brand" placeholder="Brand Name" className="input input-bordered w-full" defaultValue={brand} required />
+            <div className="lg:flex flex-row gap-4 mb-4">
+                <input type="text" name="brand" placeholder="Brand Name" className="input input-bordered w-full mb-4" defaultValue={brand} required />
                 <input type="text" name="type" placeholder="Product Type" className="input input-bordered w-full" defaultValue={type} required/>
             </div>
-            <div className="flex gap-4">
-                <input type="text" name="price" placeholder="Product Price" className="input input-bordered w-full" defaultValue={price} required/>
+            <div className="lg:flex flex-row gap-4">
+                <input type="text" name="price" placeholder="Product Price" className="input input-bordered w-full mb-4" defaultValue={price} required/>
                 <input type="text" name="ratting" placeholder="Product Ratting" className="input input-bordered w-full" defaultValue={ratting} required/>
             </div>
             <input type="text" name="description" placeholder="Product Description" className="input input-bordered w-full my-4" defaultValue={description} required/>
