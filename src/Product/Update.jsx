@@ -40,7 +40,6 @@ const Update = () => {
         const type = form.type.value;
         const price = form.price.value;
         const ratting = form.ratting.value;
-        const description = form.description.value;
 
         const product = {photo, name, brand, type, price, ratting, description}
 
@@ -81,7 +80,7 @@ const Update = () => {
                 <input type="text" name="price" placeholder="Product Price" className="input input-bordered w-full mb-4" defaultValue={price} required/>
                 <input type="text" name="ratting" placeholder="Product Ratting" className="input input-bordered w-full" defaultValue={ratting} required/>
             </div>
-            <input type="text" name="description" placeholder="Product Description" className="input input-bordered w-full my-4" defaultValue={description} required/>
+            {/* <input type="text" name="description" placeholder="Product Description" className="input input-bordered w-full my-4" defaultValue={description} required/> */}
 
             <input type="submit" className="btn w-full bg-success" value="Update" />
 
