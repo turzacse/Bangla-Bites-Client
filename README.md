@@ -1,8 +1,15 @@
-# React + Vite
+# Bangla Bites
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Bangla Bites, your one-stop destination for delicious food items from various brands. Explore our website to discover mouthwatering treats and place your orders with ease.
 
-Currently, two official plugins are available:
+## Live Website
+Check out our live website [here](https://bangla-bites.web.app/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Display detailed information about various food brands and their products that we sell.
+- Users are required to log in to access food item details and place to cart.
+- Add food items to the cart for ordering.
+- Remove unwanted food items from the cart.
+- Add or update product details as an authorized user.
+- User profiles include a profile picture displayed in the navbar. Hover or click on the picture to view your name and log out button.

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import ProductCard from "../Pages/Home/ProductCard";
 import Footer from "../Shared/Footer";
 
@@ -93,6 +93,8 @@ const Product = () => {
                 ) : (
                     <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-5 gap-2">
                         {
+                            filterProduct.length === 0 ? <p className="bg-base-200 p-10 w-[350px] mx-auto shadow-2xl text-center md:mt-20  text-red-400 font-bold text-2xl">The Item of this brand is unavailable now <br /> <Link to='/' className="font-normal text-green-600">Please Go back to home</Link> </p> 
+                            :
                             filterProduct.map(p => <ProductCard key={p._id} p={p}></ProductCard>)
                         }
                     </div>
